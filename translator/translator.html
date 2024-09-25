@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Translator</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="translator.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="translator_property">
+            <ul class="new_item">
+                <li>
+                    <select>
+
+                    </select>
+                </li>
+                <li class="bx bx-transfer"></li>
+                <li>
+                    <select>
+
+                    </select>
+                </li>
+            </ul>
+            <div class="write_box">
+                <div class="property-form">
+                    <textarea maxlength="5000" class="fromText" placeholder="Write down"></textarea>
+                    <div class="icons">
+                        <span class="bx bx-volume-full from"></span>
+                        <span class="bx bx-speaker"></span>
+                        <span class="bx bx-stop"></span>
+                        <span class="clsbtns"><img src="icons8-close-30.png" class="clsbtns2" alt=""></span>
+                        <div class="code_length">0/5,000</div>
+                    </div>
+                </div>
+                <div class="property-trans">
+                    <textarea class="toTranslate" placeholder="Translated Text"></textarea>
+                    <div class="icons">
+                        <span class="bx bx-volume-full to"></span>
+                        <span class="bx bx-copy"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="./translator.js"></script>
+    <script src="./language.js"></script>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+
+</html>
