@@ -1,0 +1,106 @@
+html,body{
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: rgb(85 104 105);
+}
+.container{
+    margin: 0;
+    display: flex;
+    padding-left: 20px;
+    height: 400px;
+    width: 300px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 10px;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;  
+    background-color: rgb(44 73 76); 
+    flex-direction: column;
+    color:rgb(255, 255, 255);
+    letter-spacing: 2px;
+}
+
+.container p{
+    margin: 0;
+    font-size: 18px;
+}
+.sec-container label{
+    margin: 0 0 -10px 90px;
+    display: block;
+}
+.code{
+    width: 75%;
+    background-color: white;
+    display: flex;
+    border-radius: 5px;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+#pass{
+    width: 80%;
+    height:30px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background: none;
+    justify-content: space-between;
+}
+.submit{
+    /* margin-top: 5px; */
+    height: 33px;
+    width: 60px;
+    border-radius: 6px;
+    font-weight: 500;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(37, 164, 232);
+}
+.btn{
+    border-radius: 50%;
+}
+.sec-container input::placeholder{color: rgb(16, 186, 36);}
+.sec-container{
+    margin-bottom: 20px;
+}
+ul{
+    padding: 0;
+    margin: 0;
+}
+li {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;                    
+    list-style-type: none;  
+    font-size: 13px;
+    width: 274px;
+    font-weight: 500;
+    margin-bottom: 0;
+  }
+.third-container p{
+    margin: 0;
+    font-size: 13px;
+    width: 274px;
+}
+input[type="checkbox"]{
+    margin-right: 0;
+}
+.green-tick{
+    color:green;
+}
+.strength{
+    margin-top: 10px;
+}
+.red-tick{
+    color:red;
+}
+#addtext{
+    font-weight: 600;
+}
+.tic{
+    font-weight: 900;
+}
