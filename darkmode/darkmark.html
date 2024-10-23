@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Mode Icon</title>
+    <style>
+        body {
+            color: black;
+            background-color: white;
+        }
+
+        .text {
+            font-size: 30px;
+            width: 400px;
+            font-style: oblique;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .white {
+            background-color: aliceblue;
+            color: black;
+        }
+
+        .black {
+            background-color: black;
+            color: white;
+        }
+
+        ul {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: nowrap;
+            flex-direction: row;
+            align-content: stretch;
+            align-items: center;
+            list-style: none;
+            cursor: pointer;
+        }
+
+        .Mode {
+            width: 30px;
+            height: 30px;
+            display: flex;
+            background-size: cover;
+            background-image: url('moon.png');
+        }
+
+        .bright {
+            background-image: url('light.png');
+        }
+
+        title {
+            border-radius: 12px 0 0 0;
+        }
+
+        .titlecontent {
+            position: absolute;
+            top: 54px;
+            left: 93%;
+            background-color: #373d47;
+            color: #ddd0d0;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 14px;
+            white-space: nowrap;
+            display: none;
+        }
+
+        .Mode:hover .titlecontent {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <ul>
+            <li><span class="text">Learning switching btw Dark and Bright Mode</span></li>
+            <li><span class="Mode" id="dark-btn" onclick="toggleMode()"><span class="titlecontent"></span></span>
+
+            </li>
+
+        </ul>
+    </div>
+
+    <script>
+        const body = document.body;
+        const btn = document.getElementById("dark-btn");
+        function toggleMode() {
+
+            // Check if it's in dark mode, then switch to light
+            if (body.classList.contains("black")) {
+                body.classList.remove("black");
+                body.classList.add("white");
+                btn.classList.remove("bright");
+
+            } else {
+                // Otherwise, switch to dark mode
+                body.classList.remove("white");
+                body.classList.add("black");
+                btn.classList.add("bright");
+            }
+        }
+        btn.addEventListener("mouseover", function () {
+            if (body.classList.contains("black")) {
+                btn.querySelector('.titlecontent').textContent = "Bright mode";
+            }
+
+            else {
+                btn.querySelector('.titlecontent').textContent = "Dark mode";
+            }
+
+        })
+
+    </script>
+
+</body>
+
+</html>
