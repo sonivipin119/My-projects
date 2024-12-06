@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>QR code Generator</title>
+    <link rel="stylesheet" href="/QRcode.css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js">
+    </script>
+</head>
+<style></style>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>QR code Generator</h1>
+        </div>
+        <div class="back">
+            <div class="srqr"></div>
+            <div class="qrcode"></div>
+            <div class="text">
+            <input type="text"  id = "code" placeholder="Please enter a URL, Press enter for generation"></div>
+            <button tyep="submit" onclick=generate()>Generate</button>
+        </div>
+    </div>
+<script src = "/QRcode.js"></script>
+</body>
+</html>
