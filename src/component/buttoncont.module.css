@@ -1,0 +1,17 @@
+.buttonConatiner{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.button{
+  width: 45px;
+  height: 45px;
+  margin: 3px;
+  border: none;
+  border-radius: 4px;
+  
+}
+.button:hover{
+  background-color: gray;
+  cursor: pointer;
+}
