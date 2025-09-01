@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Password Strength Checker</title>
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arima&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="pass.css">
+<style></style>
+
+<body>
+    <div class="container">
+        <div class="first-conatiner">
+            <h2>Welcome ....<p><i>Passcode Strength Checker</i></p>
+            </h2>
+        </div>
+        <div class="sec-container">
+            <label for="Password">Password</label><br>
+            <span class="cont" style="
+            width: 91%;
+            display: flex;
+            justify-content: space-between;">
+                <span class="code">
+                    <input type="text" id="pass" placeholder="ex - Ev&23$fVip">
+                    <button id="clear-btn" class="btn">&times;</button>
+                </span>
+                <button onclick="pasubmit()" class="submit">Submit</button></span>
+        </div>
+        <div class="third-container">
+            <p>Password have ...</p>
+            <ul>
+                <li>At least one uppercase letter
+                    <span id="upc" class="tic"></span>
+                </li>
+                <li>At least one lowercase letter
+                    <span id="lowc" class="tic"></span>
+                </li>
+                <li>At least one special charcter
+                    <span id="spec" class="tic"></span>
+                </li>
+                <li>At least one digit (0-9)
+                    <span id="digi" class="tic"></span>
+                </li>
+                <li>At least have 4 charcter
+                    <span id="vali" class="tic"></span>
+                </li>
+            </ul>
+            <div class="strength">
+                <label for="Password"><b>Password Strength</b></label>
+                <span id="addtext"></span>
+            </div>
+        </div>
+    </div>
+
+    <script src="pass.js"></script>
+</body>
+
+</html>
